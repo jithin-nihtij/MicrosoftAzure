@@ -1,0 +1,144 @@
+@font-face {
+    font-family: HedvigLetters;
+    src: url('Fonts/HedvigLettersSans-Regular.ttf');
+}
+body{
+    font-family: HedvigLetters;
+}
+nav .styleA a{
+    font-size: 11px;
+    padding: 5px 0;
+    color: black;
+    font-weight: 300;
+}
+
+#expand{
+    width:50%;
+    transition:width 0.5s
+}
+
+.navbar-brand{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+nav a:hover{
+    text-decoration: underline;
+
+}
+
+nav .styleA  a:active{
+    border:1px dotted black;
+}
+
+nav input{
+    width:50%;
+}
+
+nav input[placeholder]{
+    font-size: small;
+    padding:  4px 10px;
+}
+
+ .expanding-input {
+    width: 100px; 
+    padding: 10px;
+    transition: width 0.3s ease, margin-left 0.3s ease; 
+    margin-left: 0;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+ul li button{
+    background-color: #89c402;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+}
+
+
+
+
+.firstRowImg img{
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height:450px;
+}
+
+.firstRowText{
+    width:80%;
+    margin: auto;
+   display: grid;
+   flex-direction: column;
+   justify-content: center;
+   grid-template-columns: 1fr 1fr;
+   height: 350px;
+}
+
+.firstRowText h1{
+    font-weight: 650;
+}
+
+.firstRowText p{
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.firstRowText button:nth-child(1){
+    background-color: #0067b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+.firstRowText button:nth-child(2){
+    background-color: none;
+    border: 2px solid #004f8b;
+    color: #004f8b;
+    
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.firstRowText div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* media queries */
+
+@media screen  and (max-width:860px){
+
+    .firstRowText{
+        position: relative;
+        top:425px;
+        padding: 25px 0;
+        grid-template-columns: 1fr ;
+    }
+
+    .firstRowText div:nth-child(1) div button{
+        margin-top: 5px;
+        display: block;
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
