@@ -285,6 +285,121 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
   padding: 20px;
 }
 
+#pns{
+  background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Mobile-Product_Services-BG-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=360&hei=644&qlt=85&fmt=png-alpha&fit=constrain');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fourthRowHead{
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+.fourthRowHead p{
+  font-size: 11px;
+}
+
+.fourthRowHead h3{
+  font-weight: 600;
+}
+
+.fourthRowSrollButton{
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.fourthRowSrollButton a{
+  padding:5px 20px ;
+  margin-left: 20px;
+  background-color: rgba(0, 79, 139, 0.384);
+  color: #263e65 ;
+  border-radius: 20px;
+  border: none;
+}
+
+.fourthRowSrollButton a:nth-child(1){
+  background-color: #263e65;
+  color: white;
+}
+
+.fourthRowSrollButton a:hover{
+  background-color: rgba(68, 104, 131, 0.692);
+}
+
+.fourthRowGrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 300px 300px 300px;
+  grid-gap: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.copilot{
+  grid-row:1/3 ;
+  grid-column: 1/4;
+  position: relative;
+
+}
+
+.copilot div:nth-child(1){
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: end;
+  padding: 50px;
+}
+
+.copilot h3{
+  font-weight: 600;
+  color: white;
+  font-size: 24px;
+}
+
+.copilot p{
+ 
+  color: rgb(233, 233, 233);
+  
+}
+
+.copilot button{
+  border-radius: 10px;
+  padding: 15px 15px;
+  background-color: #b3daf0;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0e1726;
+}
+
+.copilot img{
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  border-radius: 20px;
+  filter: brightness(50%);
+}
+
+
+.copilot img{
+  width: 100%;
+  object-fit: cover;
+  height: 600px;
+}
+
+.fourthRowGrid .card img{
+  height:30px;
+  width: 30px;
+  margin: 20px;
+  
+  
+}
+
 /* media queries */
 @media screen and (min-width: 860px) {
 
@@ -296,8 +411,7 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
   }
   .thirdRowDropdown{
     padding: 20px;
-    /* display: grid;
-    grid-template-columns: 1fr ; */
+    
     overflow-y: auto;
   }
 
@@ -324,14 +438,12 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
 
   .thirdRowDropdown{
     padding: 20px;
-    /* display: grid;
-    grid-template-columns: 1fr ; */
-    
+    overflow-y: auto;
   }
  
 }
 
-@media screen and (max-width:1036px) {
+@media screen and (max-width:1159px) {
   .thirdRowScrollButton{
     white-space: nowrap; 
     overflow-x: scroll; 
@@ -340,4 +452,16 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
   .thirdRowScrollButton::-webkit-scrollbar{
     width: 0;
 }
+
+.fourthRowSrollButton{
+  white-space: nowrap;
+  overflow-x: scroll;
 }
+
+.fourthRowSrollButton::-webkit-scrollbar{
+  width: 0;
+}
+ 
+
+}
+
