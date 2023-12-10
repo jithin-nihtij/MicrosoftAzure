@@ -141,6 +141,11 @@ ul li button {
   color: #1f3252;
 }
 
+#feauteredNews{
+  background: rgb(123,196,191);
+  background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(215,215,218,0.6306897759103641) 48%, rgba(255,255,255,0.5746673669467788) 83%, rgba(255,255,255,1) 100%);
+}
+
 .secondNav button:nth-child(1) {
   background-color: #89c402;
   border-radius: 5px;
@@ -196,7 +201,10 @@ ul li button {
     font-size: 14px;
 }
 
-
+.thirdRowHead{
+  width: 80%;
+  margin: auto;
+}
 
 .thirdRowHead h3{
   font-weight: 600;
@@ -208,12 +216,17 @@ ul li button {
 
 #solutions{
   padding-top: 50px;
-  width: 80%;
+  width: 100%;
   margin: auto;
+  background: rgb(123,196,191);
+background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(215,215,218,0.6306897759103641) 48%, rgba(255,255,255,0.5746673669467788) 83%, rgba(255,255,255,1) 100%);
+
 }
 
 .thirdRowScrollButton{
-  margin-top: 50px;
+  width: 80%;
+  padding: 50px 0;
+  margin:auto;
 }
 
 .thirdRowScrollButton a{
@@ -236,15 +249,62 @@ ul li button {
 }
 
 
+
+.drop{
+  height: 450px;
+}
+
+.drop img{
+  object-fit: cover;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.thirdRowDropdown{
+  width: 80%;
+  margin: auto;
+}
+
+.thirdRowDropdown span{
+  
+  display: none;
+  
+}
+
+.thirdRowDropdown span img{
+  display: block;
+  margin-top: 30px;
+}
+
+
+.thirdRowDropdown p{
+  cursor: pointer;
+  color: #263e65 ;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(102, 102, 102);
+  padding: 20px;
+}
+
 /* media queries */
 @media screen and (min-width: 860px) {
+
   .firstRowText {
     position: absolute;
     left:10%;
     bottom: 425px;
     
   }
+  .thirdRowDropdown{
+    padding: 20px;
+    /* display: grid;
+    grid-template-columns: 1fr ; */
+    overflow-y: auto;
+  }
+
 }
+
+
+
 @media screen and (max-width: 860px) {
   .firstRowText {
     padding-top: 50px;
@@ -262,13 +322,19 @@ ul li button {
     grid-template-columns: 1fr;
   }
 
+  .thirdRowDropdown{
+    padding: 20px;
+    /* display: grid;
+    grid-template-columns: 1fr ; */
+    
+  }
  
 }
 
 @media screen and (max-width:1036px) {
   .thirdRowScrollButton{
-    white-space: nowrap; /* Prevent buttons from wrapping */
-    overflow-x: scroll; /* Add horizontal scrollbar */
+    white-space: nowrap; 
+    overflow-x: scroll; 
   }
 
   .thirdRowScrollButton::-webkit-scrollbar{
