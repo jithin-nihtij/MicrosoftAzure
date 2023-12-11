@@ -411,6 +411,169 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
   color: #263e65 ;
 }
 
+#Resources{
+  background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-Resource-BG-2x1?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=984&qlt=85&fmt=png-alpha&fit=constrain');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.fifthRowHead{
+  padding: 50px 0;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.fifthRowHead p{
+  font-size: 12px;
+}
+
+.fifthRowHead h3{
+  font-weight: 600;
+}
+
+.fifthRowNav{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.fifthRowNav div{
+  display: flex;
+  width: 100%;
+}
+
+.fifthRowNav a{
+  background: white;
+  width: 100%;
+  font-size: 13px;
+  border-radius: none;
+  padding: 15px 10px;
+  box-shadow: 1px 1px 1px 1px rgb(231, 231, 231);
+}
+
+.fifthRowNav a:hover{
+  background: white;
+  border-bottom: 2px solid #263e65;
+  
+}
+
+.fifthRowNav a:first-child{
+  border-bottom: 2px solid #263e65;
+  border-radius: 5px 0 0 5px;
+}
+
+.fifthRowNav a:last-child{
+  
+  border-radius:  0 5px 5px 0 ;
+}
+
+.optimize{
+  padding: 60px 0;
+  
+  margin: auto;
+  text-align: center;
+}
+
+.optimize h4{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.optimize a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #263e65;
+}
+
+.optimize img{
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.optimize div{
+  
+ 
+  border-radius: 10px;
+  margin:50px auto ;
+  width: 60%;
+  background-color: #e8f7ffad;
+  padding: 30px;
+}
+
+.infrastructure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-AzureRegions-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=983&qlt=95&fmt=png-alpha&fit=constrain');
+  background-position: center;
+  text-align: center;
+  height: 300px;
+  background-size: cover;
+  width: 100%;
+  color: white;
+}
+
+.infrastructure h3{
+  font-weight: 600;
+}
+
+.infrastructure p{
+  font-size: 13px;
+}
+
+.infrastructure button{
+  border-radius: 10px;
+  padding: 15px 15px;
+  background-color: #b3daf0;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0e1726;
+}
+
+.investment{
+  
+  text-align: center;
+  padding: 30px 0;
+  background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-DataCard-Background?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=560&qlt=85&fit=constrain');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.investment h3{
+  margin: auto;
+  width: 80%;
+  color: white;
+  font-weight: 600;
+}
+
+.investmentGrid{
+  
+  background-color: rgba(255, 255, 255, 0.151);
+  padding: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 50px auto;
+  width: 80%;
+  grid-gap: 15px;
+  border-radius: 20px;
+}
+
+.investmentGrid p{
+  color: white;
+}
+
+
+
+
+
+
+
 /* media queries min-width*/
 @media screen and (min-width: 860px) {
 
@@ -493,6 +656,25 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
     overflow-y: auto;
   }
 
+  .optimize div{  
+    width: 90%;
+  }
+
+  .infrastructure button{
+    width: 80%;
+  }
+
+  .investmentGrid{
+  
+    margin: 10px auto;
+    grid-template-columns: 1fr;
+  }
+
+  .investmentGrid div{
+    width: 80%;
+    margin: auto;
+  }
+
 
  
 }
@@ -515,6 +697,16 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
 .fourthRowSrollButton::-webkit-scrollbar{
   width: 0;
 }
+
+.fifthRowNav div{
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.fifthRowNav div::-webkit-scrollbar{
+  width: 0;
+}
+
  
 
 }
