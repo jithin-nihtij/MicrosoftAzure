@@ -286,9 +286,10 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
 }
 
 #pns{
-  background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Mobile-Product_Services-BG-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=360&hei=644&qlt=85&fmt=png-alpha&fit=constrain');
+  background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-Product-Services-BG-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=1129&qlt=100&fmt=png-alpha&fit=constrain');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .fourthRowHead{
@@ -331,29 +332,39 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
 
 .fourthRowGrid{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 300px 300px 300px;
-  grid-gap: 10px;
+  grid-template-columns: 1fr ;
+  
   width: 80%;
   margin: auto;
-}
-
-.copilot{
-  grid-row:1/3 ;
-  grid-column: 1/4;
   position: relative;
-
+  grid-gap: 20px;
+ 
 }
 
 .copilot div:nth-child(1){
-  position: relative;
+ 
+  position: absolute;
   z-index: 1;
+  top: 0;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  height: 600px;
   justify-content: end;
-  padding: 50px;
+  padding: 20px;
+
+  
+  
 }
+
+.copilot img{
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  border-radius: 20px;
+  filter: brightness(50%);
+}
+
+
 
 .copilot h3{
   font-weight: 600;
@@ -377,30 +388,30 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
   color: #0e1726;
 }
 
-.copilot img{
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  border-radius: 20px;
-  filter: brightness(50%);
-}
 
 
-.copilot img{
-  width: 100%;
-  object-fit: cover;
-  height: 600px;
-}
+
 
 .fourthRowGrid .card img{
   height:30px;
   width: 30px;
   margin: 20px;
-  
-  
 }
 
-/* media queries */
+.fourthRowGrid .card h5{
+  font-weight: 600;
+}
+
+.fourthRowGrid .card p{
+  font-size: 13px;
+}
+
+.fourthRowGrid .card a{
+  font-size: 13px;
+  color: #263e65 ;
+}
+
+/* media queries min-width*/
 @media screen and (min-width: 860px) {
 
   .firstRowText {
@@ -415,10 +426,51 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
     overflow-y: auto;
   }
 
+  .fourthRowGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    grid-gap: 20px;
+   
+  }
+
+  .copilot{
+  
+    grid-column: 1/4;
+  }
+
+}
+
+@media screen  and (min-width:1440px){
+  .copilot{
+    
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .fourthRowGrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+  }
+
+  .copilot div:nth-child(1){
+    height: 450px;
+   
+    
+    width: 20%;
+  }
+
+  .copilot img{
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+
+}
 }
 
 
-
+/* media queries max-width */
 @media screen and (max-width: 860px) {
   .firstRowText {
     padding-top: 50px;
@@ -440,6 +492,8 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
     padding: 20px;
     overflow-y: auto;
   }
+
+
  
 }
 
@@ -464,4 +518,6 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
  
 
 }
+
+
 
