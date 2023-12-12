@@ -72,7 +72,7 @@ ul li button {
   flex-direction: column;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  height: 350px;
+  height: 400px;
 }
 
 .firstRowText h1 {
@@ -140,6 +140,8 @@ ul li button {
 .styleA2 li a:hover {
   color: #1f3252;
 }
+
+
 
 #feauteredNews{
   background: rgb(123,196,191);
@@ -568,6 +570,165 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
   color: white;
 }
 
+.sixthRowHead{
+  padding: 50px 0;
+  width: 80%;
+  margin: auto;
+}
+
+.sixthRowHead p{
+  font-size: 12px;
+}
+
+.sixthRowHead h3{
+  font-weight: 600;
+}
+
+
+.sixthRowGrid{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  padding: 20px;
+  box-shadow: 0px 0px 2px 2px rgb(192, 192, 192);
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+}
+
+.sixthRowGrid div h4{
+  padding: 20px ;
+  font-weight: 600;
+}
+
+.sixthRowGrid div:nth-child(1) img{
+ box-shadow: 0 0 1px 1px rgb(184, 182, 182);
+ border-radius: 5px;
+ 
+}
+
+.sixthRowGrid div:nth-child(2) img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  height: 500px;
+}
+
+.sixthRowGrid div:nth-child(1) div{
+
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+
+.sixthRowIcons{
+  padding: 70px 0;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  
+}
+
+.sixthRowIcons div:first-child{
+  border-bottom: 3px solid #005597;
+  border-radius: 5px 0 0 5px;
+}
+
+.sixthRowIcons div:last-child{
+  
+  border-radius: 0 5px 5px 0;
+}
+
+.sixthRowIcons img{
+  height: 70px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sixthRowIcons div{
+  box-shadow: 0 0 1px 1px rgb(207, 207, 207);
+}
+
+.sixthRowIcons div:hover{
+  border-bottom: 3px solid #005597;
+}
+
+.seventhRow{
+  margin-top: 50px;
+  padding: 20px 0;
+  background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-NextStep-BG-2x1?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=608&qlt=100&fmt=png-alpha&fit=constrain');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.seventhRowHead{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.seventhRowHead h2{
+  font-weight: 600;
+}
+
+.seventhRowGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 80%;
+  margin: 50px auto;
+
+}
+
+.seventhRowGrid .card{
+  box-shadow: 0 0 1px 1px rgb(194, 193, 193);
+  border-radius: 20px;
+  height: 350px;
+}
+
+.seventhRowGrid .card h5{
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.seventhRowGrid .card p{
+  font-size: 15px;
+}
+
+
+
+.seventhRowGrid .card-body div{
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  
+}
+
+.seventhRowGrid .card-body div a{
+  padding: 5px;
+  font-size: 13px;
+ 
+}
+
+.seventhRowGrid .card-body div a:nth-child(2){
+  color: #004f8b;
+  text-decoration: none;
+}
+
+
+
+.seventhRowGrid img{
+  width:40px;
+  height: 40px;
+  object-fit: cover;
+  margin: 20px;
+  box-shadow: 0 0 1px 1px rgb(221, 221, 221);
+}
+
+
 
 
 
@@ -580,7 +741,7 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
   .firstRowText {
     position: absolute;
     left:10%;
-    bottom: 425px;
+    top: 8%;
     
   }
   .thirdRowDropdown{
@@ -636,7 +797,7 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
 /* media queries max-width */
 @media screen and (max-width: 860px) {
   .firstRowText {
-    padding-top: 50px;
+    padding-top: 20px;
     display: block;
     grid-template-columns: 1fr;
   }
@@ -675,7 +836,49 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
     margin: auto;
   }
 
+  .sixthRowGrid{
+    grid-template-columns: 1fr;
+    grid-auto-flow: initial; 
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
+  .sixthRowGrid div:nth-child(1) div{
+
+    height: 100px;
+  }
+
+  .sixthRowGrid div:nth-child(1){
+    margin-top: 20px;
+  }
+  
+  .sixthRowGrid div:nth-child(2) img{
+   height: 350px;
+  }
+  
+  .seventhRowGrid{
+    grid-template-columns: 1fr;
+  }
+
+  .seventhRowGrid .card{
+    
+    height: 250px;
+  }
+
+  .seventhRowGrid .card-body div{
+    height: 15%;
+  }
+
+  .seventhRowGrid img{
+    width:30px;
+    height: 30px;
+    margin: 10px;
+  }
+
+  .sixthRowIcons{
+    display: none;
+  }
+  
  
 }
 
@@ -707,6 +910,15 @@ background: linear-gradient(90deg, rgba(123,196,191,0.639093137254902) 0%, rgba(
   width: 0;
 }
 
+.seventhRowGrid .card h5{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+.seventhRowGrid .card p{
+  font-size: 12px;
+}
  
 
 }
