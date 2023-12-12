@@ -1,6 +1,14 @@
 function drop1(){
     var drop1 = document.getElementById('drop1')
-    drop1.style.display="block"
+   
+
+    if(drop1.style.display === "block"){
+      drop1.style.display = "none"
+    }
+
+    else{
+      drop1.style.display = "block"
+    }
    
 
     var drop2 = document.getElementById('drop2')
@@ -19,7 +27,15 @@ function drop1(){
 
   function drop2(){
     var drop2 = document.getElementById('drop2')
-    drop2.style.display="block"
+    
+    if(drop2.style.display === "block"){
+      drop2.style.display = "none"
+    }
+
+    else{
+      drop2.style.display = "block"
+    }
+   
 
     var drop1 = document.getElementById('drop1')
     drop1.style.display="none"
@@ -37,7 +53,14 @@ function drop1(){
 
   function drop3(){
     var drop3 = document.getElementById('drop3')
-    drop3.style.display="block"
+    
+    if(drop3.style.display === "block"){
+      drop3.style.display = "none"
+    }
+
+    else{
+      drop3.style.display = "block"
+    }
 
     var drop2 = document.getElementById('drop2')
     drop2.style.display="none"
@@ -55,7 +78,14 @@ function drop1(){
 
   function drop4(){
     var drop4 = document.getElementById('drop4')
-    drop4.style.display="block"
+    
+    if(drop4.style.display === "block"){
+      drop4.style.display = "none"
+    }
+
+    else{
+      drop4.style.display = "block"
+    }
 
     var drop3 = document.getElementById('drop3')
     drop3.style.display="none"
@@ -74,8 +104,15 @@ function drop1(){
   function drop5(){
     
     var drop5 = document.getElementById('drop5')
-    drop5.style.display="block"
+    
+    if(drop5.style.display === "block"){
+      drop5.style.display = "none"
+    }
 
+    else{
+      drop5.style.display = "block"
+    }
+    
     var drop4 = document.getElementById('drop4')
     drop4.style.display="none"
 
@@ -117,4 +154,100 @@ function drop1(){
 
     var closebtn = document.getElementById("close");
     closebtn.style.visibility = "hidden";
+  }
+
+
+  function explore(){
+
+    var explore =document.getElementById('explore')
+
+    if(window.innerWidth <=1159){
+      if (explore.style.display === "block") {
+          explore.style.display = "none";
+      } 
+
+      else{
+        explore.style.display = "block";
+      }
+    }  
+    }
+
+
+
+ 
+  function products(){
+
+    var products = document.getElementById('products')
+    
+    if(window.innerWidth <=1159){
+      if (products.style.display === "block") {
+      
+            products.style.display = "none";
+        } else {
+            
+            products.style.display = "block";
+        }
+    }
+
+  }
+
+
+  function solution(){
+    var solution = document.getElementById('solution')
+
+    if(window.innerWidth <=1159){
+
+        if (solution.style.display === "block") {
+              solution.style.display = "none";
+          } else {
+              
+              solution.style.display = "block";
+          }
+      }
+  }
+
+  function partners(){
+
+    var partners = document.getElementById('partners')
+
+    if(window.innerWidth <=1159){
+        if (partners.style.display === "block") {
+          partners.style.display = "none";
+      } else {
+          
+          partners.style.display = "block";
+      }
+    }
+
+  }
+
+
+  function resources(){
+
+    var resources = document.getElementById('resources')
+
+    if(window.innerWidth <=1159){
+        if (resources.style.display === "none") {
+          resources.style.display = "block";
+      } else {
+          
+          resources.style.display = "none";
+      }
+    }
+
+  }
+
+  function cloud(){
+
+    var cloud = document.getElementById('cloud')
+
+
+    if(window.innerWidth <=1159){
+        if (cloud.style.display === "none") {
+          cloud.style.display = "block";
+      } else {
+          
+          cloud.style.display = "none";
+      }
+        }
   }
